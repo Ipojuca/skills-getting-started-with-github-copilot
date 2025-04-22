@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="participants-section">
               <h5>Participantes:</h5>
               <ul class="participants-list">
-                ${details.participants.map(participant => `<li>${participant}</li>`).join('')}
+                ${details.participants.map(participant => `<li>${escapeHTML(participant)}</li>`).join('')}
               </ul>
               <div class="participant-count">${details.participants.length} participante(s) inscrito(s)</div>
             </div>
